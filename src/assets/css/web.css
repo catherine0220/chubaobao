@@ -1,0 +1,116 @@
+.promo-container{
+	display: flex;
+	gap: 22px; 
+	padding: 0 23px;
+	position: relative;
+	padding-left: 413px;
+	margin-bottom: 100px;
+}
+.promo-container .promo-tile {
+	width: 351px;
+	height: auto;
+	border-radius: 8px;
+	background: #242B2B;
+	padding: 23px;
+	box-sizing: border-box;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: visible;
+	z-index: 1; 
+}
+.promo-container .promo-tile {
+	position: relative;
+	width: 351px;
+	height: auto;
+	border-radius: 8px;
+	background: #242B2B;
+	padding: 23px;
+	box-sizing: border-box;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: visible;
+	cursor: pointer;
+}
+.promo-container .promo-tile::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	padding: 1px; 
+	border-radius: 8px;
+	background: linear-gradient(180deg, #FED210 0%, #2D3636 100%);
+	mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+	-webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+	mask-composite: exclude;
+	-webkit-mask-composite: xor;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+	z-index: 2;
+}
+.promo-container .promo-tile:hover::before {
+	opacity: 1;
+}
+.promo-content {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+	flex: 1;
+}
+.promo-container .promo-content .promo-title {
+	font-family: "PingFang SC", sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	vertical-align: bottom;
+	margin: 0;
+	color: white;
+	margin-bottom: 28px;
+}
+.promo-container .promo-content .promo-text {
+	font-family: "PingFang SC", sans-serif;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	vertical-align: bottom;
+	margin: 0;
+	color: white;
+	margin-bottom: 51px;
+}
+.promo-container .promo-content .promo-button {
+	width: 92px;
+	height: auto;
+	padding: 6px 20px ;
+	border-radius: 6px;
+	background: var(--JYS-, #F8D54A);
+	border: none;
+	font-family: "PingFang SC", sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	color: #1C2122;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	position: relative;
+	margin-top: auto;
+}
+.promo-container .promo-img {
+	position: absolute;
+	top: 72px;
+	left: 223px; 
+	width: 120px;
+	height: 120px;
+	z-index: 9999 !important; 
+	pointer-events: none
+}
