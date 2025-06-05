@@ -1,3 +1,6 @@
+body {
+	background-color: #eee;
+}
 .promo-container{
 	display: flex;
 	flex-direction: column;
@@ -102,4 +105,139 @@
 	height: 107px;
 	z-index: 9999 !important; 
 	pointer-events: none
+}
+.card {
+	width: 343px;
+	height: 187px;
+	border-radius: 26px;
+	padding: 20px;
+	left: 23px;
+	background: linear-gradient(180deg, #F67669 0%, #CA272C 100%);
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: white;
+}
+
+.card-body {
+	display: flex;
+	align-items: center;
+}
+
+.icon {
+	width: 98px;
+	height: 120px;
+	top: 2px;
+	left: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+
+.icon img {
+	width: 98px;
+	height: 120px;
+	object-fit: contain;
+	margin-top: 50px;
+}
+
+.text-content {
+	flex: 1;
+	margin-left: 12px;
+	margin-top: -10px;
+	/* 上移让文字更贴合图像顶端 */
+}
+
+.text-content .title {
+	width: 72;
+	height: 29;
+	top: 32px;
+	left: 146px;
+}
+
+.title {
+	font-family: Inter;
+	font-weight: 700px;
+	font-size: 24px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	margin-top: 5px;
+}
+
+.text-content .desc1 {
+	width: 204px;
+	height: 15px;
+	top: 73px;
+	left: 146px;
+
+}
+
+.desc1 {
+	font-family: Inter;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 100%;
+	letter-spacing: 0%;
+
+}
+
+.text-content .desc2 {
+	width: 169;
+	height: 32;
+	top: 100px;
+	left: 146px;
+
+}
+
+.desc2 {
+	font-family: Inter;
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 100%;
+	letter-spacing: 0%;
+
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
+	margin-top: -20px;
+	margin-left: 50px;
+}
+
+.join-btn {
+	padding: 8px 20px;
+	background-color: white;
+	color: #B1122E;
+	font-weight: bold;
+	border: none;
+	border-radius: 22px;
+	left: 1px;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.button-container .join-btn span {
+	font-family: Noto Sans SC;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 100%;
+	letter-spacing: 0%;
+}
+
+.join-btn:hover {
+	background-color: #28282B;
+	color: #fff;
+}
+
+.arrow-btn {
+	width: 11px;
+	height: 15px;
+	font-family: Noto Sans SC;
+	font-weight: 700px;
+	transform: rotate(180deg);
 }
