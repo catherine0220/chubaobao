@@ -39,7 +39,7 @@
 			</div>
 			<div class="promo-tile">
 				<div class="promo-content">
-				<h3 class="promo-title">投资金额：<span class="highlight">50000-10000</span></h3>
+				<h3 class="promo-title">投资金额：<span class="highlight">5000-10000</span></h3>
 				<p class="promo-text">每月收入</p>
 				<p class="promo-text2">
 					<span class="part1">2.5%</span>
