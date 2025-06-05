@@ -1,54 +1,25 @@
-.body{
-	height: 844px;
-	background: #F7F7F7;
-}
 .promo-container{
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
 	justify-content: center; 
 	align-items: center; 
-	background: #F7F7F7;
 }
 .promo-container .promo-tile {
 	position: relative;
 	width: 343px;
-	height: auto;
+	height: 160px;
 	border-radius: 26px;
 	background: #fff;
-	padding: 19px 17px 10px 10px;
+	padding: 19px 10px 10px 17px;
 	box-sizing: border-box;
 	color: white;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	align-items: center;
+	align-items: left;
 	overflow: visible;
 	z-index: 1;
-}
-.promo-container .promo-tile::before {
-	content: "";
-	position: absolute;
-	inset: 0;
-	padding: 1px; 
-	border-radius: 8px;
-	background: linear-gradient(180deg, #FED210 0%, #2D3636 100%);
-	mask: 
-    linear-gradient(#fff 0 0) content-box, 
-    linear-gradient(#fff 0 0);
-	-webkit-mask: 
-    linear-gradient(#fff 0 0) content-box, 
-    linear-gradient(#fff 0 0);
-	mask-composite: exclude;
-	-webkit-mask-composite: xor;
-	opacity: 0;
-	transition: opacity 0.3s ease;
-	pointer-events: none;
-	z-index: 2;
-	align-items: center;
-}
-.promo-container .promo-tile:hover::before {
-	opacity: 1;
 }
 .promo-content {
 	display: flex;
@@ -64,8 +35,11 @@
 	letter-spacing: 0%;
 	vertical-align: bottom;
 	margin: 0;
-	color: white;
+	color: #252525;
 	margin-bottom: 13px;
+}
+.promo-container .promo-content .highlight {
+	color: #44539D;
 }
 .promo-container .promo-content .promo-text {
 	font-family: Inter;
@@ -78,31 +52,54 @@
 	color: #808080;
 	margin-bottom: 6px;
 }
+.promo-container .promo-content .promo-text2 {
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	vertical-align: bottom;
+	margin: 0;
+	color: #AB1A29;
+	display: flex;
+	gap: 64px;
+}
 .promo-container .promo-content .promo-button {
 	width: 106px;
 	height: 31px;
-	padding: 6px 20px ;
-	border-radius: 5px;
-	background: var(--JYS-, #F8D54A);
+	padding: 7px 14px ;
+	border-radius: 6px;
 	border: none;
-	font-family: "PingFang SC", sans-serif;
-	font-size: 13px;
-	font-weight: 400;
-	color: #1C2122;
+	background: var(--JYS-, #BD1C22);
+	font-family: Inter;
+	font-size: 15px;
+	font-weight: 300;
+	color: #fff;
 	cursor: pointer;
 	display: inline-flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: left;
 	z-index: 1;
 	position: relative;
-	margin-top: auto;
+	margin-top: 25px;
+	gap: 23px;
+}
+.promo-container .promo-content .promo-button:hover {
+  background-color: #686D67;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.promo-container .promo-content .promo-button .button-arrow {
+	width: 16px;
+	height: 16px;
 }
 .promo-container .promo-img {
 	position: absolute;
-	top: 72px;
-	left: 223px; 
-	width: 120px;
-	height: 120px;
+	top: 36px;
+	left: 226px; 
+	width: 107px;
+	height: 107px;
 	z-index: 9999 !important; 
 	pointer-events: none
 }
