@@ -1,39 +1,30 @@
+.body{
+	height: 844px;
+	background: #F7F7F7;
+}
 .promo-container{
 	display: flex;
-	gap: 22px; 
-	padding: 0 23px;
-	position: relative;
-	padding-left: 413px;
-	margin-bottom: 100px;
+	flex-direction: column;
+	gap: 40px;
+	justify-content: center; 
+	align-items: center; 
+	background: #F7F7F7;
 }
 .promo-container .promo-tile {
-	width: 351px;
+	position: relative;
+	width: 343px;
 	height: auto;
-	border-radius: 8px;
-	background: #242B2B;
-	padding: 23px;
+	border-radius: 26px;
+	background: #fff;
+	padding: 19px 17px 10px 10px;
 	box-sizing: border-box;
 	color: white;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	align-items: center;
 	overflow: visible;
-	z-index: 1; 
-}
-.promo-container .promo-tile {
-	position: relative;
-	width: 351px;
-	height: auto;
-	border-radius: 8px;
-	background: #242B2B;
-	padding: 23px;
-	box-sizing: border-box;
-	color: white;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	overflow: visible;
-	cursor: pointer;
+	z-index: 1;
 }
 .promo-container .promo-tile::before {
 	content: "";
@@ -54,6 +45,7 @@
 	transition: opacity 0.3s ease;
 	pointer-events: none;
 	z-index: 2;
+	align-items: center;
 }
 .promo-container .promo-tile:hover::before {
 	opacity: 1;
@@ -65,32 +57,32 @@
 	flex: 1;
 }
 .promo-container .promo-content .promo-title {
-	font-family: "PingFang SC", sans-serif;
-	font-weight: 400;
-	font-size: 13px;
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 18px;
 	line-height: 100%;
 	letter-spacing: 0%;
 	vertical-align: bottom;
 	margin: 0;
 	color: white;
-	margin-bottom: 28px;
+	margin-bottom: 13px;
 }
 .promo-container .promo-content .promo-text {
-	font-family: "PingFang SC", sans-serif;
-	font-weight: 600;
-	font-size: 28px;
+	font-family: Inter;
+	font-weight: 300;
+	font-size: 12px;
 	line-height: 100%;
 	letter-spacing: 0%;
 	vertical-align: bottom;
 	margin: 0;
-	color: white;
-	margin-bottom: 51px;
+	color: #808080;
+	margin-bottom: 6px;
 }
 .promo-container .promo-content .promo-button {
-	width: 92px;
-	height: auto;
+	width: 106px;
+	height: 31px;
 	padding: 6px 20px ;
-	border-radius: 6px;
+	border-radius: 5px;
 	background: var(--JYS-, #F8D54A);
 	border: none;
 	font-family: "PingFang SC", sans-serif;

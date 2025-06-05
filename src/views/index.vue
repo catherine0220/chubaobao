@@ -1,5 +1,6 @@
 <template>
-<div class="promo-container">
+<div class="body">
+	<div class="promo-container">
 			<div class="promo-tile">
 				<div class="promo-content">
 				<p class="promo-title">投资金额：1000-5000</p>
@@ -24,7 +25,8 @@
 				</div>
 				<img class="promo-img" src="@/assets/img/promo3.png" alt="promo" />
 			</div>
-		</div>
+	</div>
+</div>
 </template>
 
 <script setup>
